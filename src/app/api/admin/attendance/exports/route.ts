@@ -4,7 +4,7 @@ import { db } from '@/lib/database/db';
 import { attendance, employees, users, userProfiles, departments } from '@/lib/database/schema';
 import { eq, and, gte, lte } from 'drizzle-orm';
 import { verifyToken } from '@/lib/auth';
-import * as XLSX from 'xlsx';
+import * as XLSX from "xlsx";
 
 export async function GET(req: NextRequest) {
   try {
